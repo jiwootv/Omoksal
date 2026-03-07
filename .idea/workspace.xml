@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a61af67c-2da3-4d5d-a1aa-aa7f8fb5d8b6" name="변경" comment="오목봇 Alpha 1.0">
-      <change afterPath="$PROJECT_DIR$/MAIN PROGRAM/MAIN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MAIN PROGRAM/code/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MAIN PROGRAM/img/BlackStone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MAIN PROGRAM/img/Board.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MAIN PROGRAM/img/WhiteStone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MAIN PROGRAM/img/marker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MAIN PROGRAM/img/stone3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_code/MAIN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_code/Real_MAin.py" afterDir="false" />
+    <list default="true" id="a61af67c-2da3-4d5d-a1aa-aa7f8fb5d8b6" name="변경" comment="오목봇 Alpha 1.0 EXE 파일로 사출 완료">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_code/GomokuBoardEditor.ui" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/ui files/GomokuBoardEditor.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_code/GomokuBoardEditor_MAIN.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/GomokuBoardEditor_MAIN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_code/Gomoku_Board.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/Gomoku_Board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_code/Resource1.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/ui files/Resource1.qrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_code/아무 의미 없는 파일.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MAIN PROGRAM/AI Omoku V 1.0.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MAIN PROGRAM/Omoksal V1.0.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +173,23 @@
       <option name="project" value="LOCAL" />
       <updated>1772867127400</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="오목봇 Alpha 1.0 EXE 파일로 사출 완료">
+      <option name="closed" value="true" />
+      <created>1772874958108</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1772874958108</updated>
+    </task>
+    <task id="LOCAL-00012" summary="오목봇 Alpha 1.0 EXE 파일로 사출 완료">
+      <option name="closed" value="true" />
+      <created>1772874991252</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1772874991252</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +209,7 @@
     <MESSAGE value="마커 자동 설치 기능 (알파)" />
     <MESSAGE value="점수계산 ㅆㄱㄴ" />
     <MESSAGE value="오목봇 Alpha 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="오목봇 Alpha 1.0" />
+    <MESSAGE value="오목봇 Alpha 1.0 EXE 파일로 사출 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="오목봇 Alpha 1.0 EXE 파일로 사출 완료" />
   </component>
 </project>
