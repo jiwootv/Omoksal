@@ -433,7 +433,7 @@ class MainWindow(QtWidgets.QMainWindow):
 			self.statusBar().showMessage(f"파일 불러옴: {path}", 3000)
 
 	def set_marker(self):
-		print(self.where_should_i_place())
+		# print(self.where_should_i_place())
 		k = self.get_marker()
 		for s in k:
 			self.place_stone(s["x"], s["y"], 3, sound=False)
@@ -497,7 +497,8 @@ class MainWindow(QtWidgets.QMainWindow):
 		return final_candidates[0]
 
 	def auto_place(self):
-		k = self.where_should_i_place()
+		self.board_instance_update()
+		k = self.GomokuBoard.where_should_i_place()
 		self.place_stone(k['x'], k['y'], 2)
 		self.board[k['y']][k['x']] = 2
 

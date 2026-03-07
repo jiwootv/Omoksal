@@ -5,6 +5,21 @@ DEBUG_MODE = MAINSETTINGS.DEBUG_MODE
 
 SIZE = 15
 
+def indexes(list: list, value):
+	k = []
+	a = 0
+	for i in list:
+		if i == value: k.append(a)
+		a += 1
+	return k
+
+def remove_duplicates(lst):
+	result = []
+	for item in lst:
+		if item not in result:
+			result.append(item)
+	return result
+
 
 class GomokuBoard:
 	def __init__(self, board_list):
@@ -228,5 +243,37 @@ class GomokuBoard:
 			scores.append({'x': i['x'], 'y': i['y'],'score': self.getScore(i['x'], i['y'], tempboard)})
 		# print(scores)
 		return scores
+
+	def where_should_i_place(self):
+		# whssk 뇌빼고 써서 뭐가 뭐였는지 하나도 기억이 안납니다;;
+		# 변수명은 신경쓰지 마세요
+		s = self.evaluate_score()
+		suction = []
+		for i in s:
+			suction.append(i["score"])
+
+		bung_tak = indexes(suction, max(suction))
+
+		real_final_list = []
+		for sibal in bung_tak:
+			p = s[sibal]
+			real_final_list.append(p)
+
+		real_final_list = remove_duplicates(real_final_list)
+
+		dist_list = []
+		for stone in real_final_list:
+			d = (stone['x'] - 7) ** 2 + (stone['y'] - 7) ** 2
+			dist_list.append(d)
+
+		min_dist = min(dist_list)
+
+		final_candidates = []
+		for i in range(len(real_final_list)):
+			if dist_list[i] == min_dist:
+				final_candidates.append(real_final_list[i])
+
+		print(final_candidates)
+		return final_candidates[0]
 
 
