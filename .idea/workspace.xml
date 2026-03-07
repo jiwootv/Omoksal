@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a61af67c-2da3-4d5d-a1aa-aa7f8fb5d8b6" name="변경" comment="마커 자동 설치 기능 (알파)">
-      <change afterPath="$PROJECT_DIR$/main_code/MAINSETTINGS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_code/1111.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_code/GomokuBoardEditor_MAIN.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/GomokuBoardEditor_MAIN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_code/GomokuEditor_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/GomokuEditor_base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_code/Gomoku_Board.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/Gomoku_Board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_code/Return/Empty.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_code/gomoku_board.json" beforeDir="false" />
-    </list>
+    <list default="true" id="a61af67c-2da3-4d5d-a1aa-aa7f8fb5d8b6" name="변경" comment="점수계산 ㅆㄱㄴ" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772162108896</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="점수계산 ㅆㄱㄴ">
+      <option name="closed" value="true" />
+      <created>1772411339820</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1772411339820</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,6 +164,7 @@
     <MESSAGE value=" 대충 UI 만드는데 시간을 낭비 www" />
     <MESSAGE value="피곤하다&#10;다른건 아니고 마커 추가" />
     <MESSAGE value="마커 자동 설치 기능 (알파)" />
-    <option name="LAST_COMMIT_MESSAGE" value="마커 자동 설치 기능 (알파)" />
+    <MESSAGE value="점수계산 ㅆㄱㄴ" />
+    <option name="LAST_COMMIT_MESSAGE" value="점수계산 ㅆㄱㄴ" />
   </component>
 </project>
