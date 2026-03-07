@@ -1,12 +1,11 @@
+# == 기본 임포트 ==
 import sys
 from PyQt6 import QtCore, QtGui, QtWidgets
 from main_code.GomokuEditor_base import Ui_MainWindow
 from PyQt6.QtMultimedia import QSoundEffect
 from PyQt6.QtCore import QUrl
-
 import json
 import Gomoku_Board
-
 import MAINSETTINGS
 
 # === 환경변수 ===
@@ -28,6 +27,23 @@ REF_WIN_Y = 270
 # 기준점이 의미하는 칸 좌표(일단 중앙)
 REF_CELL_X = 6
 REF_CELL_Y = 7
+
+
+def indexes(list: list, value):
+	k = []
+	a = 0
+	for i in list:
+		if i == value: k.append(a)
+		a += 1
+	return k
+
+def remove_duplicates(lst):
+	result = []
+	for item in lst:
+		if item not in result:
+			result.append(item)
+	return result
+
 
 if DEBUG_MODE: print("Main File Loaded")
 
@@ -69,6 +85,7 @@ class MainWindow(QtWidgets.QMainWindow):
 		self.ui.actionReset.triggered.connect(self.reset)
 		self.ui.actionMarker.triggered.connect(self.set_marker)
 		self.ui.actionGetRow.triggered.connect(self.get_rows)
+		self.ui.actionAutoplace.triggered.connect(self.auto_place)
 
 		# 소@리들
 		self.place_sound = QSoundEffect()
@@ -416,11 +433,12 @@ class MainWindow(QtWidgets.QMainWindow):
 			self.statusBar().showMessage(f"파일 불러옴: {path}", 3000)
 
 	def set_marker(self):
-		self.board_instance_update()
-
-		k = self.GomokuBoard.setMarker()
+		print(self.where_should_i_place())
+		k = self.get_marker()
 		for s in k:
 			self.place_stone(s["x"], s["y"], 3, sound=False)
+
+
 
 		if FUNNYMODE:
 			self.save_sound.play()
@@ -437,6 +455,51 @@ class MainWindow(QtWidgets.QMainWindow):
 				"바둑돌 주위에 마커 설치를 완료하였습니다."
 			)
 			self.statusBar().showMessage(f"마커 설치 완료", 3000)
+
+	def get_marker(self):
+		self.board_instance_update()
+		k = self.GomokuBoard.setMarker()
+		s = self.GomokuBoard.evaluate_score()
+
+		return k
+
+	def where_should_i_place(self):
+		# whssk 뇌빼고 써서 뭐가 뭐였는지 하나도 기억이 안납니다;;
+		# 변수명은 신경쓰지 마세요
+		self.board_instance_update()
+		s = self.GomokuBoard.evaluate_score()
+		suction = []
+		for i in s:
+			suction.append(i["score"])
+
+		bung_tak = indexes(suction, max(suction))
+
+		real_final_list = []
+		for sibal in bung_tak:
+			p = s[sibal]
+			real_final_list.append(p)
+
+		real_final_list = remove_duplicates(real_final_list)
+
+		dist_list = []
+		for stone in real_final_list:
+			d = (stone['x'] - 7) ** 2 + (stone['y'] - 7) ** 2
+			dist_list.append(d)
+
+		min_dist = min(dist_list)
+
+		final_candidates = []
+		for i in range(len(real_final_list)):
+			if dist_list[i] == min_dist:
+				final_candidates.append(real_final_list[i])
+
+		print(final_candidates)
+		return final_candidates[0]
+
+	def auto_place(self):
+		k = self.where_should_i_place()
+		self.place_stone(k['x'], k['y'], 2)
+		self.board[k['y']][k['x']] = 2
 
 	def get_rows(self):
 		import traceback

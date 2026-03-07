@@ -42,7 +42,7 @@ class GomokuBoard:
 		with open(path + "/" + file_name + ".json", "w", encoding="utf-8") as f:
 			json.dump(data, f, ensure_ascii=False, indent=2)
 
-	def get_lines(self, x, y):
+	def get_lines(self, x, y, board="myself"):
 		"""
 		입력 좌표 (x,y)의 돌(1/2)을 기준으로
 		4개 축(가로/세로/대각/역대각)에서 이어진 연속 돌 길이를 계산해서
@@ -55,10 +55,14 @@ class GomokuBoard:
 			"counts": {3: 1, 4: 1, 5: 0}
 		}
 		"""
+		if board == "myself":
+			board_1 = self.board
+		else:
+			board_1 = board
 		if not (0 <= x < SIZE and 0 <= y < SIZE):
 			return None
 
-		stone = self.board[y][x]
+		stone = board_1[y][x]
 		if stone not in (1, 2):
 			# 빈칸/마커면 라인 의미 없음
 			return None
@@ -68,7 +72,7 @@ class GomokuBoard:
 			c = 0
 			cx = x + dx
 			cy = y + dy
-			while 0 <= cx < SIZE and 0 <= cy < SIZE and self.board[cy][cx] == stone:
+			while 0 <= cx < SIZE and 0 <= cy < SIZE and board_1[cy][cx] == stone:
 				c += 1
 				cx += dx
 				cy += dy
@@ -127,7 +131,7 @@ class GomokuBoard:
 					for dr in direction:
 						x1 = x + dr[0]
 						y1 = y + dr[1]
-						print(x1 + 1, y1 + 1)
+						if DEBUG_MODE: print(x1 + 1, y1 + 1)
 						if x1 < 0:
 							x1 = 0
 						if x1 >= SIZE:
@@ -140,7 +144,7 @@ class GomokuBoard:
 						if self.board[y1][x1] != 1 and self.board[y1][x1] != 2:  # 흑돌 또는 백돌이 아니면:
 							try:
 								if DEBUG_MODE: print(f"Pos: ({x1 + 1},{y1 + 1}) / {self.board[y1][x1]}")
-								markers.append({"x": x1, "y": y1, "type": self.board[y1][x1]})
+								markers.append({"x": x1, "y": y1})
 							except:
 								if DEBUG_MODE: print("ERROR")
 		if DEBUG_MODE:
@@ -148,9 +152,13 @@ class GomokuBoard:
 				print(_)
 		return markers
 
-	def getScore(self, x, y):
+	def getScore(self, x, y, board="myself"):
 		# 공격만: (x,y)에 이미 놓인 내 돌(1/2)의 강함을 평가
-		linedict = self.get_lines(x, y)
+		if board == "myself":
+			board_ang = self.board
+		else:
+			board_ang = board
+		linedict = self.get_lines(x, y, board_ang)
 		if linedict is None:
 			return 0
 
@@ -196,3 +204,29 @@ class GomokuBoard:
 			score += 30_000  # 더블 3
 
 		return score
+
+	def evaluate_score(self):
+		# 마커리스트 지정 딸깍
+		markers = self.setMarker()
+		scores = []  # 각 마커간의 점수가 들어갈 곳 www
+		for i in markers:
+			# 이때 i의 형식: {'x':a, 'y':b}
+
+			# 일단 임시리스트 대강 suction 하고
+			tempboard = [row[:] for row in self.board]
+
+			# 그 칸 화이트워싱
+			# 뭐 늘 type은 하양일거니까 저렇게 둬도 되고 마커가 있는 칸은 당연히 type = 0인칸이라 저지랄해도 됨
+			tempboard[i['y']][i['x']] = 2
+			for j in tempboard:
+				for k in j:
+					ah_sibal_gaegatda = [" ", "●", "○"]
+					# print(ah_sibal_gaegatda[k], end=" ")
+				# print()
+			# 대충 추가를 해줍니다
+			# 점수 넣어줬음
+			scores.append({'x': i['x'], 'y': i['y'],'score': self.getScore(i['x'], i['y'], tempboard)})
+		# print(scores)
+		return scores
+
+

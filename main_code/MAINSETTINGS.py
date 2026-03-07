@@ -5,7 +5,7 @@ Funnymode나 AI의 매개변수 값 등 조정을 원하는 값이 있다면 이
 """
 
 FUNNYMODE = True
-DEBUG_MODE = True
+DEBUG_MODE = False
 
 if DEBUG_MODE:
 	print("Environment Variable Loaded Successfully")

@@ -111,13 +111,17 @@ class Ui_MainWindow(object):
         self.actionGetRow.setObjectName("actionGetRow")
         self.actionReset = QtGui.QAction(parent=MainWindow)
         self.actionReset.setObjectName("actionReset_1")
+        self.actionAutoplace = QtGui.QAction(parent=MainWindow)
+        self.actionAutoplace.setObjectName("actionReset_1")
         self.menuFile.addAction(self.actionSave_As)
         self.menuFile.addAction(self.actionLoad)
         self.menuBoard.addAction(self.actionMarker)
         self.menuBoard.addAction(self.actionGetRow)
         self.menuBoard.addAction(self.actionReset)
+        self.menuBoard.addAction(self.actionAutoplace)
         self.menubar.addAction(self.menuFile.menuAction())
         self.menubar.addAction(self.menuBoard.menuAction())
+
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -141,6 +145,7 @@ class Ui_MainWindow(object):
         self.actionMarker.setText(_translate("MainWindow", "Place marker"))
         self.actionGetRow.setText(_translate("MainWindow", "Get Row list"))
         self.actionReset.setText(_translate("MainWindow", "Reset"))
+        self.actionAutoplace.setText(_translate("MainWindow", "Autoplace"))
         if DEBUG_MODE: print("Ui setup (1) Success")
 
 

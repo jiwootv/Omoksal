@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a61af67c-2da3-4d5d-a1aa-aa7f8fb5d8b6" name="변경" comment="점수계산 ㅆㄱㄴ" />
+    <list default="true" id="a61af67c-2da3-4d5d-a1aa-aa7f8fb5d8b6" name="변경" comment="점수계산 ㅆㄱㄴ">
+      <change afterPath="$PROJECT_DIR$/main_code/아무 의미 없는 파일.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_code/GomokuBoardEditor_MAIN.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/GomokuBoardEditor_MAIN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_code/GomokuEditor_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/GomokuEditor_base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_code/Gomoku_Board.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/Gomoku_Board.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_code/MAINSETTINGS.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/MAINSETTINGS.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +57,7 @@
     "Python.Gomoku_Board.executor": "Run",
     "Python.MAINSETTINGS.executor": "Run",
     "Python.gomokuboardEditor.executor": "Run",
+    "Python.아무 의미 없는 파일.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/PC/PycharmProjects/오목봇/main_code",
@@ -146,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772411339820</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="점수계산 ㅆㄱㄴ">
+      <option name="closed" value="true" />
+      <created>1772859716880</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1772859716880</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
