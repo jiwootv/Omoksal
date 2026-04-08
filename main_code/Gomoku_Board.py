@@ -257,18 +257,18 @@ class GomokuBoard:
 				score += 10000000
 			elif length == 4:
 				if open_ends == 2:
-					score += 300000
+					score += 500000
 				elif open_ends == 1:
-					score += 120000
+					score += 80000
 				else:
-					score += 20000
+					score += 500
 			elif length == 3:
 				if open_ends == 2:
-					score += 30000
+					score += 20000
 				elif open_ends == 1:
-					score += 8000
+					score += 5000
 				else:
-					score += 1000
+					score += 200
 			elif length == 2:
 				if open_ends == 2:
 					score += 1500
@@ -281,31 +281,23 @@ class GomokuBoard:
 					score += 10
 
 		# 3) 복합 패턴 보너스
-		if open4 >= 2:
-			score += 2000000
-		elif open4 >= 1 and semiopen4 >= 1:
-			score += 1200000
-		elif open4 >= 1:
-			score += 900000
-		elif semiopen4 >= 2:
-			score += 500000
+		if semiopen4 >= 2:
+			score += 350000
 
 		if open3 >= 2:
-			score += 200000
+			score += 250000
 		elif open3 >= 1 and semiopen3 >= 1:
-			score += 70000
+			score += 50000
 
-		if open4 >= 1 and open3 >= 1:
-			score += 1500000
-		elif semiopen4 >= 1 and open3 >= 1:
-			score += 400000
+		if semiopen4 >= 1 and open3 >= 1:
+			score += 200000
 
 		if c4 >= 2:
-			score += 400000
+			score += 150000
 		elif c4 >= 1 and c3 >= 1:
-			score += 100000
+			score += 30000
 		elif c3 >= 2:
-			score += 20000
+			score += 5000
 
 		return score
 
@@ -377,15 +369,15 @@ class GomokuBoard:
 		if len(s) == 0:
 			return {"x": 7, "y": 7, "score": 0}
 
-		suction = []
+		scorelist1 = []
 		for i in s:
-			suction.append(i["score"])
+			scorelist1.append(i["score"])
 
-		bung_tak = indexes(suction, max(suction))
+		maxindexes = indexes(scorelist1, max(scorelist1))
 
 		real_final_list = []
-		for sibal in bung_tak:
-			p = s[sibal]
+		for j in maxindexes:
+			p = s[j]
 			real_final_list.append(p)
 
 		real_final_list = remove_duplicates(real_final_list)

@@ -424,7 +424,6 @@ class MainWindow(QtWidgets.QMainWindow):
 			)
 			self.statusBar().showMessage(f"파일 불@러옴: {path}", 3000)
 		else:
-			self.load_sound.play()
 			QtWidgets.QMessageBox.information(
 				self,
 				"알림",

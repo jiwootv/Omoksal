@@ -27,19 +27,6 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt;&quot;&gt;AI와의 1대1 오목 대국&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="justtext1">
-    <property name="geometry">
-     <rect>
-      <x>630</x>
-      <y>520</y>
-      <width>171</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>아카자여.. 오목 한판 두자꾸나..</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="board">
     <property name="geometry">
      <rect>
@@ -105,19 +92,6 @@
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;좌클릭으로 돌 설치하세요.&lt;/p&gt;&lt;p&gt;그러면 AI가 &lt;/p&gt;&lt;p&gt;자동으로 돌을 둬줍니다.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="description2">
-    <property name="geometry">
-     <rect>
-      <x>610</x>
-      <y>60</y>
-      <width>191</width>
-      <height>261</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;현재 평가함수 버전: V1.0&lt;/span&gt;&lt;/p&gt;&lt;p&gt;패치노트:&lt;/p&gt;&lt;p&gt;- 가장 기본적인 버전 완성&lt;/p&gt;&lt;p&gt;- 아직 가지치기는 못하지만&lt;/p&gt;&lt;p&gt;앞의 수를 볼수 있음&lt;/p&gt;&lt;p&gt;- 그러나 아직 막는거 안넣어둠&lt;/p&gt;&lt;p&gt;- 일단 이게 1차 Model&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
   </widget>
