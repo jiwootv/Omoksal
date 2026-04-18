@@ -551,7 +551,7 @@ class MainWindow(QtWidgets.QMainWindow):
 			QtWidgets.QMessageBox.information(
 				self,
 				"알@림",
-				"당신의 바둑돌은 모두 뒤1졌습니다! 펑 터졌어요!"
+				"당신의 바둑돌은 모두 펑 터졌어요!"
 			)
 			self.statusBar().showMessage(f"현재 바둑판의 돌들 시체로 결정", 3000)
 		else:

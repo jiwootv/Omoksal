@@ -30,7 +30,7 @@ OFFSET_Y = 8
 class MainWindow(QtWidgets.QMainWindow):
 	def __init__(self):
 		super().__init__()
-		uic.loadUi("ui files/main_playing_game.ui", self)
+		uic.loadUi("ui_files/main_playing_game.ui", self)
 
 		self.board_data = [[EMPTY for _ in range(SIZE)] for __ in range(SIZE)]
 		self.placed_stones = {}

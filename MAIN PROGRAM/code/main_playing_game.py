@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'C:\Users\PC\PycharmProjects\오목봇\main_code\ui files\main_playing_game.ui'
+# Form implementation generated from reading ui file 'C:\Users\PC\PycharmProjects\오목봇\main_code\ui_files\main_playing_game.ui'
 #
 # Created by: PyQt6 UI code generator 6.10.2
 #

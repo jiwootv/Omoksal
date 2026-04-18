@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a61af67c-2da3-4d5d-a1aa-aa7f8fb5d8b6" name="변경" comment="막을줄 이제 알음!!!!!!!!!!!!!!!!!!!!!!">
+    <list default="true" id="a61af67c-2da3-4d5d-a1aa-aa7f8fb5d8b6" name="변경" comment="해치웠다.">
+      <change afterPath="$PROJECT_DIR$/main_code/AI끼리 맞짱을 까게 시켜.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_code/GomokuBoardEditor_MAIN.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/GomokuBoardEditor_MAIN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MAIN PROGRAM/code/Real_MAin.py" beforeDir="false" afterPath="$PROJECT_DIR$/MAIN PROGRAM/code/Real_MAin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MAIN PROGRAM/code/main_playing_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/MAIN PROGRAM/code/main_playing_game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_code/Gomoku_Board.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/Gomoku_Board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_code/MAINSETTINGS.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/MAINSETTINGS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_code/Return/gomoku_board.json" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/Return/gomoku_board.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_code/ui files/main_playing_game.ui" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/ui files/main_playing_game.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_code/Real_MAin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/Real_MAin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_code/main_playing_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/main_playing_game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_code/ui files/GomokuBoardEditor.ui" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/ui_files/GomokuBoardEditor.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_code/ui files/Resource1.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/ui_files/Resource1.qrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_code/ui files/main_playing_game.ui" beforeDir="false" afterPath="$PROJECT_DIR$/main_code/ui_files/main_playing_game.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,25 +52,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.BoardEditor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.FATAL_WRONG_VERSION.executor&quot;: &quot;Run&quot;,
-    &quot;Python.GomokuBoardEditor_MAIN.executor&quot;: &quot;Run&quot;,
-    &quot;Python.GomokuEditor_base.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Gomoku_Board.executor&quot;: &quot;Run&quot;,
-    &quot;Python.MAIN.executor&quot;: &quot;Run&quot;,
-    &quot;Python.MAINSETTINGS.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Real_MAin.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gomokuboardEditor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main_playing_game.executor&quot;: &quot;Run&quot;,
-    &quot;Python.아무 의미 없는 파일.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/PycharmProjects/오목봇/MAIN PROGRAM&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.AI끼리 맞짱을 까게 시켜.executor": "Run",
+    "Python.BoardEditor.executor": "Run",
+    "Python.FATAL_WRONG_VERSION.executor": "Run",
+    "Python.GomokuBoardEditor_MAIN.executor": "Run",
+    "Python.GomokuEditor_base.executor": "Run",
+    "Python.Gomoku_Board.executor": "Run",
+    "Python.MAIN.executor": "Run",
+    "Python.MAINSETTINGS.executor": "Run",
+    "Python.Real_MAin.executor": "Run",
+    "Python.gomokuboardEditor.executor": "Run",
+    "Python.main_playing_game.executor": "Run",
+    "Python.아무 의미 없는 파일.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/PC/PycharmProjects/오목봇/MAIN PROGRAM",
+    "settings.editor.selected.configurable": "Errors"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\PC\PycharmProjects\오목봇\MAIN PROGRAM" />
@@ -208,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773055399807</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="해치웠다.">
+      <option name="closed" value="true" />
+      <created>1775654534476</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1775654534476</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,6 +243,7 @@
     <MESSAGE value="오목봇 Alpha 1.0" />
     <MESSAGE value="오목봇 Alpha 1.0 EXE 파일로 사출 완료" />
     <MESSAGE value="막을줄 이제 알음!!!!!!!!!!!!!!!!!!!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="막을줄 이제 알음!!!!!!!!!!!!!!!!!!!!!!" />
+    <MESSAGE value="해치웠다." />
+    <option name="LAST_COMMIT_MESSAGE" value="해치웠다." />
   </component>
 </project>

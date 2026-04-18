@@ -2,7 +2,6 @@ import json
 import MAINSETTINGS
 
 DEBUG_MODE = MAINSETTINGS.DEBUG_MODE
-
 SIZE = 15
 
 
@@ -15,7 +14,6 @@ def indexes(list_: list, value):
 		a += 1
 	return k
 
-
 def remove_duplicates(lst):
 	result = []
 	for item in lst:
@@ -23,13 +21,15 @@ def remove_duplicates(lst):
 			result.append(item)
 	return result
 
-
 class GomokuBoard:
-	def __init__(self, board_list):
+	def __init__(self, board_list, defense_weight=1):
 		# 보드 리스트는 2차원의 15*15 리스트이다.
 		# 예: [[0, 1, 0, 0, 0...], ...]
 		# 흑은 1이고, 백은 2이다.
 		self.board = board_list
+
+		# 수비 가중치
+		self.defense_weight = defense_weight
 
 	def edit_board(self, x, y, type):
 		self.board[y][x] = type

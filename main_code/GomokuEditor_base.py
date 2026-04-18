@@ -1,5 +1,4 @@
 # Form implementation generated from reading ui file 'main_code/GomokuBoardEditor.ui'
-#
 # Created by: PyQt6 UI code generator 6.10.2
 #
 # WARNING: Any manual changes made to this file will be lost when pyuic6 is
